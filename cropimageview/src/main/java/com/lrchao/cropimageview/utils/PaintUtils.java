@@ -9,7 +9,6 @@ import android.util.TypedValue;
  * Description: 画笔的工具类
  *
  * @author liuranchao
- * @date 16/4/16 下午4:00
  */
 public final class PaintUtils {
     private PaintUtils() {

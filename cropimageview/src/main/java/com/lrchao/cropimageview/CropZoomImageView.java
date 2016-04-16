@@ -5,7 +5,6 @@ import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.graphics.PointF;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -16,7 +15,6 @@ import android.widget.ImageView;
  * Description: 截取图片缩放的View.
  *
  * @author liuranchao
- * @date 16/4/16 下午4:06
  */
 public class CropZoomImageView extends ImageView {
 
@@ -109,6 +107,7 @@ public class CropZoomImageView extends ImageView {
 
     /**
      * 获取矩形区域内的截图
+     *
      * @param rect Rect
      * @return Bitmap
      */
@@ -152,7 +151,7 @@ public class CropZoomImageView extends ImageView {
 
     /* 这里实现了多点触摸放大缩小，和单点移动图片的功能，参考了论坛的代码 */
     @Override
-    public boolean onTouchEvent(@NonNull MotionEvent event) {
+    public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
             case MotionEvent.ACTION_DOWN:
                 savedMatrix.set(matrix);

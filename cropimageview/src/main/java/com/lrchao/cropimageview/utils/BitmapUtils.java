@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
  * Description: 有关Bitmap的工具方法集合.
  *
  * @author liuranchao
- * @date 16/4/16 下午4:09
  */
 public final class BitmapUtils {
 

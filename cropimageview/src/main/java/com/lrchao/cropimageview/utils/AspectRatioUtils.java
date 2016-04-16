@@ -6,7 +6,6 @@ import android.graphics.Rect;
  * Description: Utility class for handling calculations involving a fixed aspect ratio.
  *
  * @author liuranchao
- * @date 16/4/16 下午4:01
  */
 public class AspectRatioUtils {
 

@@ -21,7 +21,6 @@ import com.lrchao.cropimageview.utils.ImageViewUtils;
  * Description: 裁剪图片的view
  *
  * @author liuranchao
- * @date 16/4/16 下午3:55
  */
 public class CropImageView extends FrameLayout implements CropOverlayView.OnDrawCropOverlayViewFinishListener {
 

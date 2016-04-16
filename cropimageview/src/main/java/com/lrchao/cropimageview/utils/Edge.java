@@ -4,7 +4,6 @@ package com.lrchao.cropimageview.utils;
  * Description:  Enum representing an edge in the crop window.
  *
  * @author liuranchao
- * @date 16/4/16 下午3:59
  */
 public enum Edge {
 

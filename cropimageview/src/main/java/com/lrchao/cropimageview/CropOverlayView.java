@@ -17,7 +17,6 @@ import com.lrchao.cropimageview.utils.PaintUtils;
  * Description: 选取头像的覆盖层.
  *
  * @author liuranchao
- * @date 16/4/16 下午3:58
  */
 public class CropOverlayView extends View {
 
