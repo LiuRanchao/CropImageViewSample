@@ -374,6 +374,7 @@ public class CropOverlayView extends View {
 
     /**
      * 获取选中区域
+     * @return rect
      */
     public Rect getCropRect() {
         Rect rect;
