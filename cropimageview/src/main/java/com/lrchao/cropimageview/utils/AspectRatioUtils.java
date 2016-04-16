@@ -9,9 +9,11 @@ import android.graphics.Rect;
  */
 public class AspectRatioUtils {
 
-
     /**
      * Calculates the aspect ratio given a rectangle.
+     *
+     * @param rect Rect
+     * @return float
      */
     public static float calculateAspectRatio(Rect rect) {
 
@@ -23,6 +25,11 @@ public class AspectRatioUtils {
     /**
      * Calculates the width of a rectangle given the top and bottom edges and an
      * aspect ratio.
+     *
+     * @param top               float
+     * @param bottom            float
+     * @param targetAspectRatio float
+     * @return float
      */
     public static float calculateWidth(float top, float bottom, float targetAspectRatio) {
 
@@ -32,9 +39,15 @@ public class AspectRatioUtils {
         return width;
     }
 
+
     /**
      * Calculates the height of a rectangle given the left and right edges and
      * an aspect ratio.
+     *
+     * @param left              float
+     * @param right             float
+     * @param targetAspectRatio float
+     * @return float
      */
     public static float calculateHeight(float left, float right, float targetAspectRatio) {
 

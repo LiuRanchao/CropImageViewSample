@@ -132,7 +132,6 @@ public class CropOverlayView extends View {
 
     /**
      * Resets the crop overlay view.
-     * <p/>
      * bitmap the Bitmap to set
      */
     public void resetCropOverlayView() {
@@ -352,6 +351,7 @@ public class CropOverlayView extends View {
 
     /**
      * 获取选中的矩形区域
+     * @return Rect
      */
     private Rect getCircleRect() {
         int left = (int) (mCx - mRadius);

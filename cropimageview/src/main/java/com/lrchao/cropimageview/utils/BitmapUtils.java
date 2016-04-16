@@ -16,6 +16,7 @@ public final class BitmapUtils {
      * bitmap可不可用
      *
      * @param b Bitmap
+     * @return 是否可用
      */
     public static boolean isAvailableBitmap(Bitmap b) {
         return (b != null && !b.isRecycled());
@@ -23,6 +24,8 @@ public final class BitmapUtils {
 
     /**
      * 释放Bitmap
+     *
+     * @param b bitmap
      */
     public static void recycleBitmap(Bitmap b) {
         if (isAvailableBitmap(b)) {
