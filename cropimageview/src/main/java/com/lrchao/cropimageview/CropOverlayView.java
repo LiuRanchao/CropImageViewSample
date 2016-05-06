@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.Region;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -19,6 +20,8 @@ import com.lrchao.cropimageview.utils.PaintUtils;
  * @author liuranchao
  */
 public class CropOverlayView extends View {
+
+    private static final String TAG = "CropOverlayView";
 
     /**
      * 截取的类型
@@ -250,6 +253,9 @@ public class CropOverlayView extends View {
     private void init(Context context) {
         mBorderPaint = PaintUtils.newBorderPaint(context);
         mBackgroundPaint = PaintUtils.newBackgroundPaint();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        }
     }
 
     /**
@@ -351,6 +357,7 @@ public class CropOverlayView extends View {
 
     /**
      * 获取选中的矩形区域
+     *
      * @return Rect
      */
     private Rect getCircleRect() {
@@ -374,6 +381,7 @@ public class CropOverlayView extends View {
 
     /**
      * 获取选中区域
+     *
      * @return rect
      */
     public Rect getCropRect() {
